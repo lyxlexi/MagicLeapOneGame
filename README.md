@@ -36,4 +36,5 @@ Create your own branch before commiting changes to minimize conflicts
 
 ## Solar System Package
 Link to Unity store: https://assetstore.unity.com/packages/templates/packs/solar-system-16139
+
 Download original purchased version: https://drive.google.com/file/d/1gYxC0krZh7F3sSEdGXgfHOV3WSiGo4Fs/view
