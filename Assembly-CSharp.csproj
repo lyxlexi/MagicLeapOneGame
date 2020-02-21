@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{04B99583-7551-F4C5-FF77-26797BFEEA9B}</ProjectGuid>
+    <ProjectGuid>{E5E85BE0-3722-E647-F622-9625792A2027}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -144,6 +144,7 @@
      <Compile Include="Assets\MagicLeap\Examples\Scripts\WacomTabletExample.cs" />
      <Compile Include="Assets\MagicLeap\Examples\Scripts\WorldScaleExample.cs" />
      <Compile Include="Assets\MagicLeap\Scripts\MLVersion.cs" />
+     <Compile Include="Assets\Scripts\spin.cs" />
      <Compile Include="Assets\SolarSystem\EllipseLineRenderer\EllipseLineRenderer.cs" />
      <Compile Include="Assets\SolarSystem\FollowOrbit\FollowOrbit.cs" />
      <Compile Include="Assets\SolarSystem\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
@@ -249,7 +250,6 @@
      <Compile Include="Assets\SolarSystem\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\SolarSystem\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\SolarSystem\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-     <Compile Include="Assets\spin.cs" />
      <None Include="Assets\SolarSystem\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\SolarSystem\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\SolarSystem\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -434,64 +434,64 @@
      <None Include="Assets\MagicLeap\Examples\Documentation\ImageTracking.txt" />
      <None Include="Assets\SolarSystem\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="Unity.XR.Management">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Subsystem.Registration">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.MagicLeap">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEditor.XR.MagicLeap.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEditor.XR.MagicLeap.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARSubsystems">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.InteractionSubsystems">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Management.Editor">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.MagicLeap">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEngine.XR.MagicLeap.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEngine.XR.MagicLeap.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -674,13 +674,13 @@
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="MSA.Runtime">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Assets/MagicLeap/Soundfield/MSA.Runtime.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Assets/MagicLeap/Soundfield/MSA.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="LuminMediaPlayer">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Assets/MagicLeap/Libs/LuminMediaPlayer.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Assets/MagicLeap/Libs/LuminMediaPlayer.dll</HintPath>
  </Reference>
  <Reference Include="LuminUnity">
- <HintPath>/Users/lexili/Desktop/Unity/magicLeapOne/Assets/MagicLeap/Libs/LuminUnity.dll</HintPath>
+ <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Assets/MagicLeap/Libs/LuminUnity.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
