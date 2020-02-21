@@ -26,13 +26,25 @@ v0.23.0
 // Skip this - See Scene Instruction Below 8) Open the `EmptyScene` Scene from `Assets`>`Scenes`>`EmptyScene`
 9) Navigate to https://creator.magicleap.com/learn/guides/gsg-create-your-first-unity-app
 
-### Game Scene
+### Git Notes
+Create your own branch before commiting changes to minimize conflicts
+
+## Game Notes
 1) Open game scene from `Assets`>`Scenes`>`gamePrototype`. This is the current game prototype. Feel free to create more scences and store under this directory.
 
 2) The purchased package is under `Assets`>`SolarSystem`. `Scenes` contains the orbiting planets. `Prefabs`contains the individual planets. 
 
-### Git Notes
-Create your own branch before commiting changes to minimize conflicts
+## Device Instructions
+
+### Zero Iteration
+Currently, we can only iterate using Zero Iteration. Build is not currently working.
+
+1) Connect to controller and put on the headset to unlock device
+2) Connect device to computer. Device Bridge in the Lab should show the connected device.
+3) In the Lab, open Unity Hub and Zero Iteration
+4) In Zero Iteration. Open the Target selector. Select your device from the Target selector. Click Restart ZI.
+5) Once Zero Iteration restarts, make sure to switch State to running
+6) In your Unity project, click Play on the top.
 
 ## Solar System Package
 Link to Unity store: https://assetstore.unity.com/packages/templates/packs/solar-system-16139
