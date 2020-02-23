@@ -7,7 +7,7 @@ public class ManipulateObject : MonoBehaviour
 {
     private MLInputController controller;
     GameObject selectedGameObject;
-    public Vector3 attachPoint;
+    public GameObject attachPoint;
     public GameObject controllerObject;
     bool trigger;
     // Start is called before the first frame update
@@ -19,12 +19,52 @@ public class ManipulateObject : MonoBehaviour
 
     void UpdateTriggerInfo()
     {
+    	if(controller.TriggerValue > 0.8f)
+    	{
+    		if (trigger == true)
+    		{
+    			RaycastHit hit;
+    			if(Physics.Raycast(controller.Position, transform.forward, out hit))
+    			{
+    				if(hit.transform.gameObject.tag == "Interactable")
+    				{
+    					selectedGameObject = hit.transform.gameObject;
+    					selectedGameObject.GetComponent<Rigidbody>().useGravity = false;
+    					attachPoint.transform.position = hit.transform.position;
+    				}
 
+    			}
+    			trigger = false;
+    		}
+    	}
+    	if(controller.TriggerValue < 0.2f)
+    	{
+    		trigger = true;
+    		if(selectedGameObject != null)
+    		{
+    			selectedGameObject.GetComponent<Rigidbody>().useGravity = true;
+    			selectedGameObject = null;
+    		}
+    	}
+
+    }
+
+    private void OnDestroy()
+    {
+    	MLInput.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    	transform.position = controller.Position;
+    	transform.rotation = controller.Orientation;
+
+    	if(selectedGameObject)
+    	{
+    		selectedGameObject.transform.position = attachPoint.transform.position;
+    		selectedGameObject.transform.rotation = gameObject.transform.rotation;
+    	}
+    	UpdateTriggerInfo();
     }
 }

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - AstronomicalBody
+  - Satellite
+  - Earth
+  - Orbit
+  - Interactable
   layers:
   - Default
   - TransparentFX
