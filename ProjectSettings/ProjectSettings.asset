@@ -663,7 +663,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: /Users/lexili/Desktop/certificate/lexi.cert
+    m_CertPath: /Users/januaryshen/Desktop/ML/Unity-Project-Template-0.22.0/janml.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

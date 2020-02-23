@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{E5E85BE0-3722-E647-F622-9625792A2027}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ControlScript.cs">
+    <Files>
+      <File FileName="Assets/MagicLeap/Core/Scripts/MagicLeapSceneOptimizer.cs" Line="1" Column="1" />
+      <File FileName="Assets/DynamicBeam.cs" Line="20" Column="1" />
+      <File FileName="Assets/MagicLeap/README.txt" />
+      <File FileName="Assets/PlaceObject.cs" Line="30" Column="1" />
+      <File FileName="Assets/ManipulateObject.cs" Line="22" Column="1" />
+      <File FileName="Assets/ControlScript.cs" Line="22" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MagicLeapOneGame" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="MagicLeap" expanded="True">
+                <Node name="Core" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="ControlScript.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a3e8d9e6-351d-4d1b-a0a0-8b83c8b52e1b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
