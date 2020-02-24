@@ -25,7 +25,7 @@ public class DynamicBeam : MonoBehaviour
         transform.rotation = controller.transform.rotation;
 
         RaycastHit hit;
-        if(Physics.Raycast(transform.position, transform.forward, out hit))
+        if (Physics.Raycast(transform.position, transform.forward, out hit))
         {
             beamLine.useWorldSpace = true;
             beamLine.SetPosition(0, transform.position);

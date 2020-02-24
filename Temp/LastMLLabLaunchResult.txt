@@ -1,0 +1,72 @@
+{
+  "results": [
+    {
+      "token": 1,
+      "state": "succeeded",
+      "startTime": "2020-02-24T07:13:23.809Z",
+      "endTime": "2020-02-24T07:13:36.911Z",
+      "commandName": "go-zi-module",
+      "commandArgs": [],
+      "output": [
+        "start-gui: started GUI",
+        "assert-module-installed: com.magicleap.zi is installed",
+        "start-module: starting com.magicleap.zi...",
+        "successfully started module com.magicleap.zi"
+      ],
+      "error": [
+        ""
+      ],
+      "subCommands": [
+        {
+          "token": 2,
+          "state": "succeeded",
+          "startTime": "2020-02-24T07:13:23.809Z",
+          "endTime": "2020-02-24T07:13:34.080Z",
+          "commandName": "start-gui",
+          "commandArgs": [],
+          "output": [
+            "started GUI"
+          ],
+          "error": [
+            ""
+          ]
+        },
+        {
+          "token": 3,
+          "state": "succeeded",
+          "startTime": "2020-02-24T07:13:34.080Z",
+          "endTime": "2020-02-24T07:13:34.824Z",
+          "commandName": "assert-module-installed",
+          "commandArgs": [
+            "com.magicleap.zi"
+          ],
+          "output": [
+            "com.magicleap.zi is installed"
+          ],
+          "error": [
+            ""
+          ]
+        },
+        {
+          "token": 4,
+          "state": "succeeded",
+          "startTime": "2020-02-24T07:13:34.824Z",
+          "endTime": "2020-02-24T07:13:36.907Z",
+          "commandName": "start-module",
+          "commandArgs": [
+            "com.magicleap.zi"
+          ],
+          "output": [
+            "starting com.magicleap.zi...",
+            "successfully started module com.magicleap.zi"
+          ],
+          "error": [
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1,
+  "success": true
+}
