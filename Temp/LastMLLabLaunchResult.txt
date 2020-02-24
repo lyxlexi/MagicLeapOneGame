@@ -3,8 +3,8 @@
     {
       "token": 1,
       "state": "succeeded",
-      "startTime": "2020-02-23T01:46:20.990Z",
-      "endTime": "2020-02-23T01:46:21.559Z",
+      "startTime": "2020-02-24T07:13:23.809Z",
+      "endTime": "2020-02-24T07:13:36.911Z",
       "commandName": "go-zi-module",
       "commandArgs": [],
       "output": [
@@ -20,8 +20,8 @@
         {
           "token": 2,
           "state": "succeeded",
-          "startTime": "2020-02-23T01:46:20.990Z",
-          "endTime": "2020-02-23T01:46:21.330Z",
+          "startTime": "2020-02-24T07:13:23.809Z",
+          "endTime": "2020-02-24T07:13:34.080Z",
           "commandName": "start-gui",
           "commandArgs": [],
           "output": [
@@ -34,8 +34,8 @@
         {
           "token": 3,
           "state": "succeeded",
-          "startTime": "2020-02-23T01:46:21.330Z",
-          "endTime": "2020-02-23T01:46:21.335Z",
+          "startTime": "2020-02-24T07:13:34.080Z",
+          "endTime": "2020-02-24T07:13:34.824Z",
           "commandName": "assert-module-installed",
           "commandArgs": [
             "com.magicleap.zi"
@@ -50,8 +50,8 @@
         {
           "token": 4,
           "state": "succeeded",
-          "startTime": "2020-02-23T01:46:21.335Z",
-          "endTime": "2020-02-23T01:46:21.432Z",
+          "startTime": "2020-02-24T07:13:34.824Z",
+          "endTime": "2020-02-24T07:13:36.907Z",
           "commandName": "start-module",
           "commandArgs": [
             "com.magicleap.zi"

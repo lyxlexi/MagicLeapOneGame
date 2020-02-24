@@ -18,10 +18,10 @@ public class PlaceObject : MonoBehaviour
 
     void OnButtonDown(byte controller_id, MLInputControllerButton button)
     {
-        if(button == MLInputControllerButton.Bumper)
+        if (button == MLInputControllerButton.Bumper)
         {
             RaycastHit hit;
-            if(Physics.Raycast(controller.Position, transform.forward, out hit))
+            if (Physics.Raycast(controller.Position, transform.forward, out hit))
             {
                 GameObject PlaceObject = Instantiate(ObjectToPlace, hit.point, Quaternion.Euler(hit.normal));
             }
@@ -38,6 +38,6 @@ public class PlaceObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
