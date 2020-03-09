@@ -164,6 +164,7 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\WacomTabletExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\WorldScaleExample.cs" />
     <Compile Include="Assets\MagicLeap\Scripts\MLVersion.cs" />
+    <Compile Include="Assets\ManipulateObject.cs" />
     <Compile Include="Assets\PlaceObject.cs" />
     <Compile Include="Assets\Scripts\spin.cs" />
     <Compile Include="Assets\SolarSystem\EllipseLineRenderer\EllipseLineRenderer.cs" />
