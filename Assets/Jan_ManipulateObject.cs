@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.MagicLeap;
 
-public class ManipulateObject : MonoBehaviour
+public class Jan_ManipulateObject : MonoBehaviour
 {
     private MLInputController controller;
     GameObject selectedGameObject;
@@ -29,7 +29,9 @@ public class ManipulateObject : MonoBehaviour
                     if (hit.transform.gameObject.tag == "Interactable")
                     {
                         selectedGameObject = hit.transform.gameObject;
-                        selectedGameObject.GetComponent<Rigidbody>().useGravity = false;
+                        // SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
+                        Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
+                        Jan.useGravity = false; //for rigidbody only
                         attachPoint.transform.position = hit.transform.position;
                     }
 
@@ -42,7 +44,9 @@ public class ManipulateObject : MonoBehaviour
             trigger = true;
             if (selectedGameObject != null)
             {
-                selectedGameObject.GetComponent<Rigidbody>().useGravity = true;
+                // SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
+                Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
+                Jan.useGravity = true;
                 selectedGameObject = null;
             }
         }
