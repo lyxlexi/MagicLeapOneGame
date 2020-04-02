@@ -29,9 +29,9 @@ public class Jan_ManipulateObject : MonoBehaviour
                     if (hit.transform.gameObject.tag == "Interactable")
                     {
                         selectedGameObject = hit.transform.gameObject;
-                        // SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
-                        Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
-                        Jan.useGravity = false; //for rigidbody only
+                        SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
+                        //Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
+                        //Jan.useGravity = false; //for rigidbody only
                         attachPoint.transform.position = hit.transform.position;
                     }
 
@@ -44,9 +44,10 @@ public class Jan_ManipulateObject : MonoBehaviour
             trigger = true;
             if (selectedGameObject != null)
             {
-                // SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
-                Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
-                Jan.useGravity = true;
+                SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
+                Jan.SendMessage("dropping"); 
+                //Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
+                //Jan.useGravity = true;
                 selectedGameObject = null;
             }
         }
