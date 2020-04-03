@@ -10,6 +10,7 @@ public class Jan_ManipulateObject : MonoBehaviour
     public GameObject attachPoint;
     public GameObject controllerObject;
     bool trigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -91,7 +92,8 @@ public class Jan_ManipulateObject : MonoBehaviour
         if (selectedGameObject)
         {
             selectedGameObject.transform.position = attachPoint.transform.position;
-            selectedGameObject.transform.rotation = gameObject.transform.rotation;
+            //selectedGameObject.transform.rotation = gameObject.transform.rotation;
+            selectedGameObject.transform.Rotate(-Vector3.up * Time.deltaTime * 100 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
         }
         UpdateTriggerInfo();
     }
