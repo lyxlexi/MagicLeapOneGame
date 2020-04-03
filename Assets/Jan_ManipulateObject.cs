@@ -26,7 +26,7 @@ public class Jan_ManipulateObject : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(controller.Position, transform.forward, out hit))
                 {
-                    if (hit.transform.gameObject.tag == "Interactable")
+                    if (hit.transform.gameObject.tag == "AstronomicalBody")
                     {
                         selectedGameObject = hit.transform.gameObject;
                         SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
