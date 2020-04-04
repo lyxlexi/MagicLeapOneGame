@@ -28,6 +28,7 @@ v0.23.0
 
 ## Game Notes
 1) Open game scene from `Assets`>`Scenes`>`Main`. This is the current game prototype. Feel free to create more scences and store under this directory.
+
 2)`Trigger` moves any planet not following orbit. Jupiter is used as an example. In `Main` scene, see `Control`>`ControllerInput` for controller input. `UpdateTriggerInfo()` function in `Jan_ManipulateObject` script controls what happens when trigger is pressed/released.
 
 ### TODO:
