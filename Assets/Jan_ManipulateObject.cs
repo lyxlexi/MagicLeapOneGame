@@ -9,6 +9,8 @@ public class Jan_ManipulateObject : MonoBehaviour
     GameObject selectedGameObject;
     public GameObject attachPoint;
     public GameObject controllerObject;
+    public GameObject ObjectToPlace;
+    private GameObject objectPlaced;
     bool trigger;
 
     // Start is called before the first frame update
@@ -17,7 +19,6 @@ public class Jan_ManipulateObject : MonoBehaviour
         MLInput.Start();
         controller = MLInput.GetController(MLInput.Hand.Left);
     }
-
     void UpdateTriggerInfo()
     {
         if (controller.TriggerValue > 0.8f)
@@ -34,12 +35,17 @@ public class Jan_ManipulateObject : MonoBehaviour
                         //Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
                         //Jan.useGravity = false; //for rigidbody only
                         attachPoint.transform.position = hit.transform.position;
+                        if (objectPlaced == null) {
+                            objectPlaced = Instantiate(ObjectToPlace, hit.point, Quaternion.Euler(hit.normal));
+                            objectPlaced.transform.SetParent(selectedGameObject.transform, false);
+                        }
                     }
 
                 }
                 trigger = false;
-            }
-        }
+            } 
+        } 
+
         if (controller.TriggerValue < 0.2f)
         {
             trigger = true;
@@ -51,6 +57,9 @@ public class Jan_ManipulateObject : MonoBehaviour
                 //Jan.useGravity = true;
                 selectedGameObject = null;
             }
+            if (objectPlaced != null) {
+                    Destroy(objectPlaced);
+                }
         }
 
     }

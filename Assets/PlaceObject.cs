@@ -7,12 +7,14 @@ public class PlaceObject : MonoBehaviour
 {
     public GameObject ObjectToPlace;
     private MLInputController controller;
+    private GameObject objectPlaced;
 
     // Start is called before the first frame update
     void Start()
     {
         MLInput.Start();
         MLInput.OnControllerButtonDown += OnButtonDown;
+        MLInput.OnControllerButtonUp += OnButtonUp;
         controller = MLInput.GetController(MLInput.Hand.Left);
     }
 
@@ -23,15 +25,29 @@ public class PlaceObject : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(controller.Position, transform.forward, out hit))
             {
-                GameObject PlaceObject = Instantiate(ObjectToPlace, hit.point, Quaternion.Euler(hit.normal));
+                objectPlaced = Instantiate(ObjectToPlace, hit.point, Quaternion.Euler(hit.normal));
             }
         }
     }
 
+    void OnButtonUp(byte controller_id, MLInputControllerButton button) {
+         if (button == MLInputControllerButton.Bumper)
+        {
+            if (objectPlaced != null){
+                Destroy(objectPlaced);
+            }
+        }
+    }
+
+    void OnButtonUp(){
+
+    }
+
     private void OnDestroy()
     {
-        MLInput.Stop();
         MLInput.OnControllerButtonDown -= OnButtonDown;
+        MLInput.OnControllerButtonUp -= OnButtonUp;
+        MLInput.Stop();
     }
 
 
