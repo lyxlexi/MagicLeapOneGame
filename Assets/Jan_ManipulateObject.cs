@@ -6,7 +6,8 @@ using UnityEngine.XR.MagicLeap;
 public class Jan_ManipulateObject : MonoBehaviour
 {
     private MLInputController controller;
-    GameObject selectedGameObject;
+    GameObject selectedPlanet;
+    GameObject selectedHolder;
     public GameObject attachPoint;
     public GameObject controllerObject;
     public GameObject ObjectToPlace;
@@ -30,14 +31,15 @@ public class Jan_ManipulateObject : MonoBehaviour
                 {
                     if (hit.transform.gameObject.tag == "AstronomicalBody")
                     {
-                        selectedGameObject = hit.transform.gameObject;
-                        SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
-                        //Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
-                        //Jan.useGravity = false; //for rigidbody only
+                        selectedPlanet = hit.transform.gameObject;
+                        selectedHolder = selectedPlanet.transform.parent.gameObject;
+                        
+                        SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
                         attachPoint.transform.position = hit.transform.position;
+                        
                         if (objectPlaced == null) {
                             objectPlaced = Instantiate(ObjectToPlace, hit.point, Quaternion.Euler(hit.normal));
-                            objectPlaced.transform.SetParent(selectedGameObject.transform, false);
+                            objectPlaced.transform.SetParent(selectedHolder.transform, false);
                         }
                     }
 
@@ -49,13 +51,11 @@ public class Jan_ManipulateObject : MonoBehaviour
         if (controller.TriggerValue < 0.2f)
         {
             trigger = true;
-            if (selectedGameObject != null)
+            if (selectedPlanet != null)
             {
-                SphereCollider Jan = selectedGameObject.GetComponent<SphereCollider>();
-                Jan.SendMessage("dropping"); 
-                //Rigidbody Jan = selectedGameObject.GetComponent<Rigidbody>();
-                //Jan.useGravity = true;
-                selectedGameObject = null;
+                SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
+                Jan.SendMessage("dropping");
+                selectedPlanet = null;
             }
             if (objectPlaced != null) {
                     Destroy(objectPlaced);
@@ -81,7 +81,7 @@ public class Jan_ManipulateObject : MonoBehaviour
             {
                 if (x > 0.5 || x < -0.5)
                 {
-                    selectedGameObject.transform.localScale += selectedGameObject.transform.localScale * x * Time.deltaTime;
+                    selectedPlanet.transform.localScale += selectedPlanet.transform.localScale * x * Time.deltaTime;
                 }
                 if(y > 0.3 || y < -0.3)
                 {
@@ -98,11 +98,10 @@ public class Jan_ManipulateObject : MonoBehaviour
         transform.position = controller.Position;
         transform.rotation = controller.Orientation;
 
-        if (selectedGameObject)
+        if (selectedPlanet)
         {
-            selectedGameObject.transform.position = attachPoint.transform.position;
-            //selectedGameObject.transform.rotation = gameObject.transform.rotation;
-            selectedGameObject.transform.Rotate(-Vector3.up * Time.deltaTime * 100 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
+            selectedPlanet.transform.position = attachPoint.transform.position;
+            selectedPlanet.transform.Rotate(-Vector3.up * Time.deltaTime * 100 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
         }
         UpdateTriggerInfo();
     }

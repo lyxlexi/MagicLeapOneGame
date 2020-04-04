@@ -38,11 +38,7 @@ public class PlaceObject : MonoBehaviour
             }
         }
     }
-
-    void OnButtonUp(){
-
-    }
-
+    
     private void OnDestroy()
     {
         MLInput.OnControllerButtonDown -= OnButtonDown;
