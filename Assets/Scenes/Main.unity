@@ -1609,7 +1609,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300002, guid: 92d6f68d435a7db44b6a5e8cab75fa17, type: 3}
 --- !u!1 &170141460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,6 +3810,7 @@ GameObject:
   - component: {fileID: 357157409}
   - component: {fileID: 357157404}
   - component: {fileID: 357157410}
+  - component: {fileID: 357157406}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: AstronomicalBody
@@ -3862,6 +3863,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.9880269
   m_Center: {x: -0.00000017881393, y: 0, z: -0.00000020861626}
+--- !u!54 &357157406
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357157402}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &357157407
 MeshRenderer:
   m_ObjectHideFlags: 0

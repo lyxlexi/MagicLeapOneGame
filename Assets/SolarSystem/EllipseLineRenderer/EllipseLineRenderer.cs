@@ -24,7 +24,7 @@ public class EllipseLineRenderer : MonoBehaviour {
 		MeshCollider meshCollider = line.GetComponent<MeshCollider>();
 		if (meshCollider!=null){
 			Mesh mesh = new Mesh();
-			lineRenderer.BakeMesh(mesh, true);
+			line.BakeMesh(mesh, true);
 			meshCollider.sharedMesh = mesh;
 
 			Debug.Log("Mesh");

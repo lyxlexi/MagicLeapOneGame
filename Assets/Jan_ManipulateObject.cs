@@ -18,6 +18,7 @@ public class Jan_ManipulateObject : MonoBehaviour
     public Text planetNameText;
     private bool trigger;
     private RectTransform rectTransform;
+    private bool collidedOnTriggerRelease;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +62,13 @@ public class Jan_ManipulateObject : MonoBehaviour
             if (selectedPlanet != null)
             {
                 SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
-                selectedPlanet = null;
+                collidedOnTriggerRelease = selectedPlanet.GetComponent<FollowOrbit>().Collided();
+                Debug.Log(collidedOnTriggerRelease);
+                FollowOrbit fo = selectedPlanet.GetComponent<FollowOrbit>();
+                selectedPlanet = null; 
+                if (collidedOnTriggerRelease) {
+                    fo.StartFollowOrbit();
+                }
             }
             if (ObjectToPlace != null) {
                 ObjectToPlace.transform.position = new Vector3(-100, 0, 0);
@@ -122,7 +129,7 @@ public class Jan_ManipulateObject : MonoBehaviour
         transform.position = controller.Position;
         transform.rotation = controller.Orientation;
 
-        if (selectedPlanet && selectedPlanet.GetComponent<FollowOrbit>().NotCollided())
+        if (selectedPlanet)
         {
             //move
             selectedHolder.transform.position = attachPoint.transform.position;
