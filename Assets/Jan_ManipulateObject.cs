@@ -18,7 +18,6 @@ public class Jan_ManipulateObject : MonoBehaviour
     public Text planetNameText;
     private bool trigger;
     private RectTransform rectTransform;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +71,7 @@ public class Jan_ManipulateObject : MonoBehaviour
 
     }
 
+
     public void LoadTextToScrollBar(string name)
     {
         string contentToPlace = "Setup content for " + name + " in script Jan_ManiipulateObject"; 
@@ -122,7 +122,7 @@ public class Jan_ManipulateObject : MonoBehaviour
         transform.position = controller.Position;
         transform.rotation = controller.Orientation;
 
-        if (selectedPlanet)
+        if (selectedPlanet && selectedPlanet.GetComponent<FollowOrbit>().NotCollided())
         {
             //move
             selectedHolder.transform.position = attachPoint.transform.position;

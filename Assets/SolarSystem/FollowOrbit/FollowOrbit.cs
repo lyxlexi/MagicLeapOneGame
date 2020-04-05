@@ -14,6 +14,7 @@ public class FollowOrbit : MonoBehaviour {
 	public int earthOffset = 1;
 
 	private Vector3[] localOrbitPositions;
+	private bool notCollided = true;
 
 	private int startEarthOffset;
 	// Use this for initialization
@@ -21,7 +22,7 @@ public class FollowOrbit : MonoBehaviour {
 		startEarthOffset = earthOffset;
 		lineRenderer = orbitToFollow.GetComponent<LineRenderer>();
 		numberOfpositions = lineRenderer.positionCount;
-		transform.localPosition = orbitToFollow.transform.TransformPoint(lineRenderer.GetPosition(numberOfpositions- earthOffset));
+		transform.localPosition = orbitToFollow.transform.TransformPoint(lineRenderer.GetPosition(numberOfpositions - earthOffset));
 
 		// save obrbit local positions for reference, so we do not have to calculate global position on coroutine
 		localOrbitPositions = new Vector3[lineRenderer.positionCount];
@@ -33,12 +34,27 @@ public class FollowOrbit : MonoBehaviour {
 		StartCoroutine(ConstantValues.FollowOrbitCoroutine);
 	}
 
+	void OnCollisionEnter(Collision collision)
+    {
+		Debug.Log("OnCollisionEnter");
+		notCollided = false;
+		orbitSpeed = 10;
+		Start();
+	}
+
+	public bool NotCollided(){
+		return notCollided;
+	}
+
+
+
 	 private IEnumerator MoveOnOrbit()
 	 {
+
 		 // move on orbit if orbit speed for planet has been set up
 		 while(Mathf.Abs(orbitSpeed) > 0)
 		 {
-			if(transform.position == localOrbitPositions[numberOfpositions- earthOffset] ){
+			if(transform.position == localOrbitPositions[numberOfpositions - earthOffset] ){
 				earthOffset+=4;
 			}
 			else
