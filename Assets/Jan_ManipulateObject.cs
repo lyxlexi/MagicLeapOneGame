@@ -74,7 +74,12 @@ public class Jan_ManipulateObject : MonoBehaviour
 
     public void LoadTextToScrollBar(string name)
     {
-        string contentToPlace = "Gas Giant\nLargest Planet in the Solar System";
+        string contentToPlace = "Setup content for " + name + " in script Jan_ManiipulateObject"; 
+        
+        //add description content here
+        if (name == "Jupiter") {
+            contentToPlace = "Gas Giant\nLargest Planet in the Solar System";
+        }
 
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length * 5);
         contentText.text = string.Empty;

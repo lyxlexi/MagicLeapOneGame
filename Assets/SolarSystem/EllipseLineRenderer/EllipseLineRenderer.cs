@@ -16,6 +16,19 @@ public class EllipseLineRenderer : MonoBehaviour {
 		line.useWorldSpace = false;
 		line.loop = false;
 		CreatePoints();
+		CreateMesh();
+	}
+
+	void CreateMesh(){
+		LineRenderer lineRenderer = line.GetComponent<LineRenderer>();
+		MeshCollider meshCollider = line.GetComponent<MeshCollider>();
+		if (meshCollider!=null){
+			Mesh mesh = new Mesh();
+			lineRenderer.BakeMesh(mesh, true);
+			meshCollider.sharedMesh = mesh;
+
+			Debug.Log("Mesh");
+		}
 	}
 
 	void CreatePoints()
