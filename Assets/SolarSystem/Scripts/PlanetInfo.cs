@@ -23,10 +23,7 @@ public class PlanetInfo : MonoBehaviour {
 		{
 			instance = this;
 		}
-		else if(instance != this)
-		{
-			Destroy(gameObject);
-		}
+		
            rectTransform = contentText.GetComponent<RectTransform>();
 
 	}

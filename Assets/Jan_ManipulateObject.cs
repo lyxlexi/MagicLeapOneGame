@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.MagicLeap;
+using UnityEngine.EventSystems;
+
+using UnityEngine.UI;
 
 public class Jan_ManipulateObject : MonoBehaviour
 {
@@ -11,14 +14,17 @@ public class Jan_ManipulateObject : MonoBehaviour
     public GameObject attachPoint;
     public GameObject controllerObject;
     public GameObject ObjectToPlace;
-    private GameObject objectPlaced;
-    bool trigger;
+    public Text contentText;
+    public Text planetNameText;
+    private bool trigger;
+    private RectTransform rectTransform;
 
     // Start is called before the first frame update
     void Start()
     {
         MLInput.Start();
         controller = MLInput.GetController(MLInput.Hand.Left);
+        rectTransform = contentText.GetComponent<RectTransform>();
     }
     void UpdateTriggerInfo()
     {
@@ -37,10 +43,11 @@ public class Jan_ManipulateObject : MonoBehaviour
                         SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
                         attachPoint.transform.position = hit.transform.position;
                         
-                        if (objectPlaced == null) {
-                            objectPlaced = Instantiate(ObjectToPlace, hit.point, Quaternion.Euler(hit.normal));
-                            objectPlaced.transform.SetParent(selectedHolder.transform, false);
+                        if (ObjectToPlace != null) {
+                            ObjectToPlace.transform.SetParent(selectedHolder.transform, false);
                         }
+
+                        LoadTextToScrollBar(selectedPlanet.name);
                     }
 
                 }
@@ -54,14 +61,21 @@ public class Jan_ManipulateObject : MonoBehaviour
             if (selectedPlanet != null)
             {
                 SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
-                Jan.SendMessage("dropping");
                 selectedPlanet = null;
             }
-            if (objectPlaced != null) {
-                    Destroy(objectPlaced);
-                }
+        
         }
 
+    }
+
+    public void LoadTextToScrollBar(string name)
+    {
+        string contentToPlace = "LoadTextToScrollBar";
+        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length * 5);
+        contentText.text = string.Empty;
+        contentText.text += contentToPlace;
+        planetNameText.text = name;
+        
     }
 
     private void OnDestroy()
@@ -100,7 +114,9 @@ public class Jan_ManipulateObject : MonoBehaviour
 
         if (selectedPlanet)
         {
-            selectedPlanet.transform.position = attachPoint.transform.position;
+            //move
+            selectedHolder.transform.position = attachPoint.transform.position;
+            //spin
             selectedPlanet.transform.Rotate(-Vector3.up * Time.deltaTime * 100 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
         }
         UpdateTriggerInfo();
