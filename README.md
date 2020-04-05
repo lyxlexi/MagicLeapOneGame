@@ -26,13 +26,19 @@ v0.23.0
 8) // Skip this - See Scene Instruction Below Open the `EmptyScene` Scene from `Assets`>`Scenes`>`EmptyScene`
 9) Navigate to https://creator.magicleap.com/learn/guides/gsg-create-your-first-unity-app
 
-### Git Notes
-Create your own branch before commiting changes to minimize conflicts
-
 ## Game Notes
-1) Open game scene from `Assets`>`Scenes`>`gamePrototype`. This is the current game prototype. Feel free to create more scences and store under this directory.
+1) Open game scene from `Assets`>`Scenes`>`Main`. This is the current game prototype. Feel free to create more scences and store under this directory.
+2) `Trigger` moves any planet not following orbit. Jupiter is used as an example. In `Main` scene, see `Control`>`ControllerInput` for controller input. `UpdateTriggerInfo()` function in `Jan_ManipulateObject` script controls what happens when trigger is pressed/released.
 
-2) The purchased package is under `Assets`>`SolarSystem`. `Scenes` contains the orbiting planets. `Prefabs`contains the individual planets. 
+### TODO:
+Design:
+1) Information board: switch texture or use picture.
+2) Game scale: planets, orbits, and information board.
+
+Coding:
+1) Information board: adjust text based on selected planet.
+2) Orbit: attach the planet to the orbit when collide; mark corresponding orbit for each planet. 
+(Optional) 3) Delete unnecessary objects & functions from the model so it runs faster.
 
 ## Device Instructions
 
