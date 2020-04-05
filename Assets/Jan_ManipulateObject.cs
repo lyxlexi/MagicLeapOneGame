@@ -45,6 +45,7 @@ public class Jan_ManipulateObject : MonoBehaviour
                         
                         if (ObjectToPlace != null) {
                             ObjectToPlace.transform.SetParent(selectedHolder.transform, false);
+                            ObjectToPlace.transform.position = selectedPlanet.transform.position;
                         }
 
                         LoadTextToScrollBar(selectedPlanet.name);
@@ -63,6 +64,9 @@ public class Jan_ManipulateObject : MonoBehaviour
                 SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
                 selectedPlanet = null;
             }
+            if (ObjectToPlace != null) {
+                ObjectToPlace.transform.position = new Vector3(-100, 0, 0);
+            }
         
         }
 
@@ -70,7 +74,8 @@ public class Jan_ManipulateObject : MonoBehaviour
 
     public void LoadTextToScrollBar(string name)
     {
-        string contentToPlace = "LoadTextToScrollBar";
+        string contentToPlace = "Gas Giant\nLargest Planet in the Solar System";
+
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length * 5);
         contentText.text = string.Empty;
         contentText.text += contentToPlace;
