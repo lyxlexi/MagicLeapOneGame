@@ -29,6 +29,7 @@ v0.23.0
 ## Game Notes
 1) Open game scene from `Assets`>`Scenes`>`Main`. This is the current game prototype. Feel free to create more scences and store under this directory.
 2) `Trigger` moves any planet not following orbit. Jupiter is used as an example. In `Main` scene, see `Control`>`ControllerInput` for controller input. `UpdateTriggerInfo()` function in `Jan_ManipulateObject` script controls what happens when trigger is pressed/released.
+3) Information board has two parts: UI and text content. UI is under PlanetUI gameobject; text is in `Jan_ManipulateObject`.
 
 ### TODO:
 Design:
@@ -36,9 +37,12 @@ Design:
 2) Game scale: planets, orbits, and information board.
 
 Coding:
-1) Information board: adjust text based on selected planet.
-2) Orbit: attach the planet to the orbit when collide; mark corresponding orbit for each planet. 
-(Optional) 3) Delete unnecessary objects & functions from the model so it runs faster.
+1) Orbit: 
+    DONE attach the planet to the orbit when collide;
+    adjust starting position of the planet to the closest line segment;
+    mark corresponding orbit for each planet;
+    adjust mesh for line renderer to collide with sphere collider - current not working, following orbit after colliding with anything
+2) Delete unnecessary objects & functions from the model so it runs faster.
 
 ## Device Instructions
 
