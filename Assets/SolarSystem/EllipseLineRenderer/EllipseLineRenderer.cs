@@ -16,7 +16,7 @@ public class EllipseLineRenderer : MonoBehaviour {
 		line.useWorldSpace = false;
 		line.loop = false;
 		CreatePoints();
-		CreateMesh();
+		//CreateMesh();
 	}
 
 	void CreateMesh(){

@@ -39,16 +39,9 @@ public class Jan_ManipulateObject : MonoBehaviour
                     {
                         selectedPlanet = hit.transform.gameObject;
                         selectedHolder = selectedPlanet.transform.parent.gameObject;
-                        
-                        SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
                         attachPoint.transform.position = hit.transform.position;
-                        
-                        if (ObjectToPlace != null) {
-                            ObjectToPlace.transform.SetParent(selectedHolder.transform, false);
-                            ObjectToPlace.transform.position = selectedPlanet.transform.position;
-                        }
 
-                        LoadTextToScrollBar(selectedPlanet.name);
+                        ShowTextBar(selectedPlanet.name);
                     }
 
                 }
@@ -79,8 +72,14 @@ public class Jan_ManipulateObject : MonoBehaviour
     }
 
 
-    public void LoadTextToScrollBar(string name)
+    public void ShowTextBar(string name)
     {
+
+        if (ObjectToPlace != null) {
+            ObjectToPlace.transform.SetParent(selectedHolder.transform, false);
+            ObjectToPlace.transform.position = selectedPlanet.transform.position;
+        }
+
         string contentToPlace = "Setup content for " + name + " in script Jan_ManiipulateObject"; 
         
         //add description content here
@@ -132,7 +131,7 @@ public class Jan_ManipulateObject : MonoBehaviour
         if (selectedPlanet)
         {
             //move
-            selectedHolder.transform.position = attachPoint.transform.position;
+            selectedPlanet.transform.position = attachPoint.transform.position;
             //spin
             selectedPlanet.transform.Rotate(-Vector3.up * Time.deltaTime * 100 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
         }

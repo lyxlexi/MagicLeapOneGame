@@ -15,6 +15,7 @@ public class FollowOrbit : MonoBehaviour {
 
 	private Vector3[] localOrbitPositions;
 	private bool collided = false;
+	private bool startedFollowingOrbit = false;
 
 	private int startEarthOffset;
 	// Use this for initialization
@@ -45,9 +46,11 @@ public class FollowOrbit : MonoBehaviour {
 
 	void OnCollisionExit(Collision collision) {
 		Debug.Log("OnCollisionExit");
-		collided = false;
-		Rigidbody rb = GetComponent<Rigidbody>();
-		if (rb != null) {rb.isKinematic = false;}
+		if (!startedFollowingOrbit){
+			collided = false;
+			Rigidbody rb = GetComponent<Rigidbody>();
+			if (rb != null) {rb.isKinematic = false;}
+		}
 	}
 
 	public bool Collided(){
@@ -55,6 +58,7 @@ public class FollowOrbit : MonoBehaviour {
 	}
 
 	public void StartFollowOrbit(){
+		startedFollowingOrbit = true;
 		Debug.Log("StartFollowOrbit");
 		GetComponent<Rigidbody>().isKinematic = true;
 		orbitSpeed = 10;
