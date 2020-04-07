@@ -74,7 +74,7 @@ public class FollowOrbit : MonoBehaviour {
 		 // move on orbit if orbit speed for planet has been set up
 		 while(Mathf.Abs(orbitSpeed) > 0)
 		 {
-			if(transform.position == localOrbitPositions[numberOfpositions - earthOffset] ){
+			if( transform.position == localOrbitPositions[numberOfpositions - earthOffset] ){
 				earthOffset+=4;
 			}
 			else
