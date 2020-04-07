@@ -19,7 +19,7 @@ public class FollowOrbit : MonoBehaviour {
 
 	private int startEarthOffset;
 	// Use this for initialization
-	void Start () {
+	void StartFollow () {
 		startEarthOffset = earthOffset;
 		lineRenderer = orbitToFollow.GetComponent<LineRenderer>();
 		numberOfpositions = lineRenderer.positionCount;
@@ -46,7 +46,8 @@ public class FollowOrbit : MonoBehaviour {
 
 	void OnCollisionExit(Collision collision) {
 		Debug.Log("OnCollisionExit");
-		if (!startedFollowingOrbit){
+		Debug.Log(collision.gameObject);
+		if (false){//!startedFollowingOrbit){
 			collided = false;
 			Rigidbody rb = GetComponent<Rigidbody>();
 			if (rb != null) {rb.isKinematic = false;}
@@ -62,7 +63,7 @@ public class FollowOrbit : MonoBehaviour {
 		Debug.Log("StartFollowOrbit");
 		GetComponent<Rigidbody>().isKinematic = true;
 		orbitSpeed = 10;
-		Start();
+		StartFollow();
 	}
 
 

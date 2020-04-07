@@ -54,9 +54,9 @@ public class Jan_ManipulateObject : MonoBehaviour
             if (selectedPlanet != null)
             {
                 SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
-                collidedOnTriggerRelease = selectedPlanet.GetComponent<FollowOrbit>().Collided();
+                collidedOnTriggerRelease = selectedHolder.GetComponent<FollowOrbit>().Collided();
                 Debug.Log(collidedOnTriggerRelease);
-                FollowOrbit fo = selectedPlanet.GetComponent<FollowOrbit>();
+                FollowOrbit fo = selectedHolder.GetComponent<FollowOrbit>();
                 selectedPlanet = null; 
                 if (collidedOnTriggerRelease) {
                     fo.StartFollowOrbit();
@@ -130,7 +130,7 @@ public class Jan_ManipulateObject : MonoBehaviour
         if (selectedPlanet)
         {
             //move
-            selectedPlanet.transform.position = attachPoint.transform.position;
+            selectedHolder.transform.position = attachPoint.transform.position;
             //spin
             selectedPlanet.transform.Rotate(-Vector3.up * Time.deltaTime * 100 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
         }
