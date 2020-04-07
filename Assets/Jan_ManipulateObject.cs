@@ -37,10 +37,9 @@ public class Jan_ManipulateObject : MonoBehaviour
                 {
                     if (hit.transform.gameObject.tag == "AstronomicalBody")
                     {
-                        selectedPlanet = hit.transform.gameObject;
-                        selectedHolder = selectedPlanet.transform.parent.gameObject;
+                        selectedHolder = hit.transform.gameObject;
+                        selectedPlanet = selectedHolder.transform.GetChild(0).gameObject;
                         attachPoint.transform.position = hit.transform.position;
-
                         ShowTextBar(selectedPlanet.name);
                     }
 
