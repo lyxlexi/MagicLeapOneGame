@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        ConfigManager.instance.orbitSpeedInDaysPerSecond = slider.value;
+        ConfigManager.instance.orbitSpeedInDaysPerSecond = 10;
 
         slider.onValueChanged.AddListener(delegate
         {
