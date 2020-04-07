@@ -37,7 +37,7 @@ public class FollowOrbit : MonoBehaviour {
 	void OnCollisionEnter(Collision collision)
     {
 		Debug.Log("OnCollisionEnter");
-		Debug.Log(collision.gameObject);
+		Debug.Log(this.gameObject + "entered" + collision.gameObject);
 		Rigidbody rb = GetComponent<Rigidbody>();
 		if (rb != null) {rb.isKinematic = true;}
 		collided = true;

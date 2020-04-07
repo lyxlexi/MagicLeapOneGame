@@ -20,13 +20,12 @@ public class EllipseLineRenderer : MonoBehaviour {
 	}
 
 	void CreateMesh(){
-		LineRenderer lineRenderer = line.GetComponent<LineRenderer>();
-		MeshCollider meshCollider = line.GetComponent<MeshCollider>();
-		if (meshCollider!=null){
+		MeshCollider meshCollider = gameObject.GetComponent<MeshCollider>();
+		if (meshCollider != null) {
+			Debug.Log("StartingMesh");	
 			Mesh mesh = new Mesh();
-			line.BakeMesh(mesh, true);
+			line.BakeMesh(mesh, false);
 			meshCollider.sharedMesh = mesh;
-
 			Debug.Log("Mesh");
 		}
 	}
