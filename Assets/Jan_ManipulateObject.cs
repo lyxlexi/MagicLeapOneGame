@@ -82,11 +82,36 @@ public class Jan_ManipulateObject : MonoBehaviour
         string contentToPlace = "Setup content for " + name + " in script Jan_ManiipulateObject"; 
         
         //add description content here
-        if (name == "Jupiter") {
-            contentToPlace = "Gas Giant\nLargest Planet in the Solar System";
+
+        switch (name)
+        {
+            case "Mercury":
+                contentToPlace = "Mercury has no moon.\nMercury is the smallest planet. \nMercury is covered with craters, like Earth’s Moon.";
+                break;
+            case "Venus":
+                contentToPlace = "Venus is the hottest planet.\nVenus is most like Earth in size.\nA day on Venus is longer than a year on Venus.";
+                break;                    
+            case "Earth":
+                contentToPlace = "The only planet known to have life.\nThe only planet that we know has plate tectonics.\nRotates on its axis once every 24 hours.";
+                break;
+            case "Mars":
+                contentToPlace = "Viewed from Earth, Mars is red, due to large amounts of iron in the soil.\nMars is home to the largest volcano in the solar system.\nMars also has the largest canyon in the solar system.";
+                break;
+            case "Jupiter":
+                contentToPlace = "The largest planet in our solar system.\n\nA spacecraft can’t land on its surface since there is no solid surface at all!\n\nThe ammonia in the upper layer of its atmosphere swirls around in tremendous storms — the Great Red Spot.";
+                break;
+            case "Saturn":
+                contentToPlace = "Saturn is famous for its beautiful rings.\nThe second largest planet in the solar system.\nSaturn is the least dense planet in our solar system.";
+                break;
+            case "Uranus":
+                contentToPlace = "Unlike all other planets in the solar system, Uranus is tilted on its side.\nIts rings are almost perpendicular to the planet’s orbit.\nUranus is an icy blue green ball - Clouds of methane filter out red light.";
+                break;
+            case "Neptune":
+                contentToPlace = "Neptune is very cold and has very strong winds.\nNeptune is very similar to Uranus\nIt had a large dark spot that disappeared. Another dark spot appeared on another part of the planet. These dark spots are storms in Neptune’s atmosphere.";
+                break;
         }
 
-        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length * 5);
+        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length);
         contentText.text = string.Empty;
         contentText.text += contentToPlace;
         planetNameText.text = name;
