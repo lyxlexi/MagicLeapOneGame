@@ -6,6 +6,7 @@ using UnityEngine;
 public class FollowOrbit : MonoBehaviour {
 
 	public GameObject orbitToFollow;
+	public GameObject colliderToCollide;
 	public float orbitSpeed;
 	
 	private int numberOfpositions;
@@ -53,7 +54,7 @@ public class FollowOrbit : MonoBehaviour {
 	}
 
 	private bool isCorrespondingCollision(Collision collision){
-		return orbitToFollow.Equals(collision.gameObject);
+		return colliderToCollide.Equals(collision.gameObject);
 	}
 
 	public bool Collided(){ return collided; }

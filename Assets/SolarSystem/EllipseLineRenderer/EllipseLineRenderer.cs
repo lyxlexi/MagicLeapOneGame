@@ -13,7 +13,11 @@ public class EllipseLineRenderer : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		line = gameObject.GetComponent<LineRenderer>();
-		line.positionCount = (segments);
+		if (isCollider){
+			line.positionCount = segments;
+		} else {
+			line.positionCount = segments+1;
+		}
 		line.useWorldSpace = false;
 		line.loop = false;
 		CreatePoints();
@@ -42,7 +46,7 @@ public class EllipseLineRenderer : MonoBehaviour {
 		float angle = 20f;
 		float delta = 360f/segments;
 
-		for(int i = 0; i < segments; i++)
+		for(int i = 0; i < line.positionCount; i++)
 		{
 			x = Mathf.Sin(Mathf.Deg2Rad * angle * xRadius);
 			y = Mathf.Cos(Mathf.Deg2Rad * angle * yRadius);
