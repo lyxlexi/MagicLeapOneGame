@@ -41,6 +41,7 @@ public class Jan_ManipulateObject : MonoBehaviour
                         selectedPlanet = selectedHolder.transform.GetChild(0).gameObject;
                         attachPoint.transform.position = hit.transform.position;
                         ShowTextBar(selectedPlanet.name);
+                        selectedHolder.GetComponent<FollowOrbit>().PlaySound();
                     }
 
                 }
@@ -53,7 +54,7 @@ public class Jan_ManipulateObject : MonoBehaviour
             trigger = true;
             if (selectedPlanet != null)
             {
-                SphereCollider Jan = selectedPlanet.GetComponent<SphereCollider>();
+                selectedHolder.GetComponent<FollowOrbit>().StopSound();
                 collidedOnTriggerRelease = selectedHolder.GetComponent<FollowOrbit>().Collided();
                 Debug.Log(collidedOnTriggerRelease);
                 FollowOrbit fo = selectedHolder.GetComponent<FollowOrbit>();

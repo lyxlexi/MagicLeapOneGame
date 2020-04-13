@@ -7,6 +7,8 @@ public class FollowOrbit : MonoBehaviour {
 
 	public GameObject orbitToFollow;
 	public GameObject colliderToCollide;
+
+	AudioSource m_MyAudioSource;
 	public float orbitSpeed;
 	
 	private int numberOfpositions;
@@ -19,6 +21,15 @@ public class FollowOrbit : MonoBehaviour {
 	private bool startedFollowingOrbit = false;
 
 	private int startEarthOffset;
+
+	public void PlaySound(){
+		m_MyAudioSource = this.GetComponent<AudioSource>();
+		m_MyAudioSource.Play();
+	}
+
+	public void StopSound(){
+		m_MyAudioSource.Stop();
+	}
 	// Use this for initialization
 	void StartFollow () {
 		startEarthOffset = earthOffset;
