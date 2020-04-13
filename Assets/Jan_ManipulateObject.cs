@@ -157,7 +157,7 @@ public class Jan_ManipulateObject : MonoBehaviour
             //move
             selectedHolder.transform.position = attachPoint.transform.position;
             //spin
-            selectedPlanet.transform.Rotate(-Vector3.up * Time.deltaTime * 10 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
+            selectedPlanet.transform.Rotate(-Vector3.up * Time.deltaTime * 1 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
         }
         UpdateTriggerInfo();
     }

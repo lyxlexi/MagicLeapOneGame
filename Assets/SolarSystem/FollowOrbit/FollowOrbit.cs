@@ -39,19 +39,21 @@ public class FollowOrbit : MonoBehaviour {
     {
 		Debug.Log("OnCollisionEnter");
 		Debug.Log(this.gameObject + "entered" + collision.gameObject);
-		Rigidbody rb = GetComponent<Rigidbody>();
-		//if (rb != null) {rb.isKinematic = true;}
-		collided = true;
+		
+		if (isCorrespondingCollision(collision)) {
+			collided = true;
+		}
 	}
 
 	void OnCollisionExit(Collision collision) {
-		Debug.Log("OnCollisionExit");
-		Debug.Log(collision.gameObject);
-		if (!startedFollowingOrbit){
+		Debug.Log("OnCollisionExit " + collision.gameObject);
+		if (isCorrespondingCollision(collision)){
 			collided = false;
-			Rigidbody rb = GetComponent<Rigidbody>();
-			//if (rb != null) {rb.isKinematic = false;}
-		}
+		}	
+	}
+
+	private bool isCorrespondingCollision(Collision collision){
+		return orbitToFollow.Equals(collision.gameObject);
 	}
 
 	public bool Collided(){
