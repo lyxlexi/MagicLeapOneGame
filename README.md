@@ -41,8 +41,9 @@ Coding:
     DONE attach the planet to the orbit when collide;
     adjust starting position of the planet to the closest line segment;
     mark corresponding orbit for each planet;
-    adjust mesh for line renderer to collide with sphere collider - current not working, following orbit after colliding with anything
-2) Delete unnecessary objects & functions from the model so it runs faster.
+    DONE adjust mesh for line renderer to collide with sphere collider - current not working, following orbit after colliding with anything
+DONE 2) Delete unnecessary objects & functions from the model so it runs faster.
+3) Make Holder & orbitCollider for each planet.
 
 ## Device Instructions
 
