@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.sh</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -46,14 +44,6 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ControlScript.cs" />
      <Compile Include="Assets\DynamicBeam.cs" />
@@ -159,6 +149,7 @@
      <Compile Include="Assets\MagicLeap\Examples\Scripts\WacomTabletExample.cs" />
      <Compile Include="Assets\MagicLeap\Examples\Scripts\WorldScaleExample.cs" />
      <Compile Include="Assets\MagicLeap\Scripts\MLVersion.cs" />
+     <Compile Include="Assets\MeshConstructor.cs" />
      <Compile Include="Assets\PlaceObject.cs" />
      <Compile Include="Assets\Scripts\spin.cs" />
      <Compile Include="Assets\SolarSystem\EllipseLineRenderer\EllipseLineRenderer.cs" />
@@ -510,6 +501,9 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine">
+ <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>
@@ -683,6 +677,9 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>/Applications/Unity/Hub/Editor/2019.2.15f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="MSA.Runtime">
  <HintPath>/Users/lexili/Desktop/Unity/MagicLeapOneGame/Assets/MagicLeap/Soundfield/MSA.Runtime.dll</HintPath>
@@ -1049,7 +1046,7 @@
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

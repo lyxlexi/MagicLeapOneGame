@@ -139,7 +139,10 @@ public class Jan_ManipulateObject : MonoBehaviour
                 }
                 if(y > 0.3 || y < -0.3)
                 {
-                    attachPoint.transform.position = Vector3.MoveTowards(attachPoint.transform.position, gameObject.transform.position, -y * Time.deltaTime);
+                    attachPoint.transform.position = Vector3.MoveTowards(
+                        attachPoint.transform.position, 
+                        gameObject.transform.position, 
+                        -y * Time.deltaTime);
 
                 }
             }

@@ -56,9 +56,7 @@ public class FollowOrbit : MonoBehaviour {
 		return orbitToFollow.Equals(collision.gameObject);
 	}
 
-	public bool Collided(){
-		return collided;
-	}
+	public bool Collided(){ return collided; }
 
 	public void StartFollowOrbit(){
 		startedFollowingOrbit = true;
@@ -81,7 +79,9 @@ public class FollowOrbit : MonoBehaviour {
 			}
 			else
 			{
-				transform.position = Vector3.MoveTowards(transform.position, localOrbitPositions[numberOfpositions - earthOffset], Time.deltaTime * orbitSpeed * ConfigManager.instance.orbitSpeedInDaysPerSecond);
+				transform.position = Vector3.MoveTowards(transform.position, 
+				localOrbitPositions[numberOfpositions - earthOffset], 
+				Time.deltaTime * orbitSpeed * ConfigManager.instance.orbitSpeedInDaysPerSecond);
 			}
 
 			if(earthOffset >= numberOfpositions){
