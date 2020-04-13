@@ -51,8 +51,8 @@ public class FollowOrbit : MonoBehaviour {
     {
 		Debug.Log("OnCollisionEnter");
 		Debug.Log(this.gameObject + "entered" + collision.gameObject);
-		
 		if (isCorrespondingCollision(collision)) {
+			StartFollowOrbit();//delete this to do follow on release
 			collided = true;
 		}
 	}
