@@ -92,7 +92,7 @@ public class Jan_ManipulateObject : MonoBehaviour
                 contentToPlace = "Venus is the hottest planet.\nVenus is most like Earth in size.\nA day on Venus is longer than a year on Venus.";
                 break;                    
             case "Earth":
-                contentToPlace = "The only planet known to have life.\nThe only planet that we know has plate tectonics.\nRotates on its axis once every 24 hours.";
+                contentToPlace = "The only planet known to have life.\n\nThe only planet that we know has plate tectonics.\n\nRotates on its axis once every 24 hours.";
                 break;
             case "Mars":
                 contentToPlace = "Viewed from Earth, Mars is red, due to large amounts of iron in the soil.\nMars is home to the largest volcano in the solar system.\nMars also has the largest canyon in the solar system.";
@@ -111,7 +111,7 @@ public class Jan_ManipulateObject : MonoBehaviour
                 break;
         }
 
-        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length);
+        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length*2);
         contentText.text = string.Empty;
         contentText.text += contentToPlace;
         planetNameText.text = name;

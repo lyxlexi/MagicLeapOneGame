@@ -1347,8 +1347,8 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1850292817}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &167098616
-SphereCollider:
+--- !u!64 &167098618
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1357,9 +1357,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.8430667
-  m_Center: {x: -0.10457438, y: -0.072668895, z: 27.937038}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &170141460
 GameObject:
   m_ObjectHideFlags: 0
@@ -7064,9 +7065,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 884395349}
+  - component: {fileID: 884395352}
+  - component: {fileID: 884395351}
+  - component: {fileID: 884395350}
   m_Layer: 0
   m_Name: EarthHolder
-  m_TagString: Untagged
+  m_TagString: AstronomicalBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7079,13 +7083,55 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884395348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: -0.5, z: -189}
+  m_LocalPosition: {x: 34, y: -0.5, z: -189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1686557057}
   m_Father: {fileID: 858734830}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &884395350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884395348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0327bfaf460017545b338bfb813351aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  earthRadiusRatio: 1
+  overwievCameraRatioSize: 4
+--- !u!114 &884395351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884395348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e543fda2f904cc04d8de926486d7bc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitToFollow: {fileID: 1496283143}
+  orbitSpeed: 1
+  earthOffset: 1
+--- !u!135 &884395352
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884395348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.02
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &892481613
 Transform:
   m_ObjectHideFlags: 0
@@ -10780,76 +10826,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1686557057}
-  - component: {fileID: 1484012348}
-  - component: {fileID: 1484012349}
-  - component: {fileID: 1484012350}
-  - component: {fileID: 1484012347}
   m_Layer: 0
   m_Name: Earth
-  m_TagString: AstronomicalBody
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1484012347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114047054977268788, guid: d29fc1c391e4f9c4fba23e72a0471c31,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484012346}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfae2d264c358d54db6e309262d20b2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planetSpeedRotation: 1
---- !u!114 &1484012348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114474295565862284, guid: d29fc1c391e4f9c4fba23e72a0471c31,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484012346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e543fda2f904cc04d8de926486d7bc93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orbitToFollow: {fileID: 1496283143}
-  orbitSpeed: 1
-  earthOffset: 1
---- !u!114 &1484012349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114316921296124458, guid: d29fc1c391e4f9c4fba23e72a0471c31,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484012346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0327bfaf460017545b338bfb813351aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  earthRadiusRatio: 1
-  overwievCameraRatioSize: 4
---- !u!135 &1484012350
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 135244012096416406, guid: d29fc1c391e4f9c4fba23e72a0471c31,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484012346}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.02
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1496283143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1380596116241858, guid: 8cba24bbebda05343a38b8d0776fb6db,
@@ -12075,7 +12058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484012346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.1, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 777856983}
@@ -14938,6 +14921,11 @@ PrefabInstance:
     - target: {fileID: 4627501074681606, guid: 1a263ab881e9b4c4286f7834d702fbbf, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 114722124209289724, guid: 1a263ab881e9b4c4286f7834d702fbbf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a263ab881e9b4c4286f7834d702fbbf, type: 3}
