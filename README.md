@@ -35,6 +35,8 @@ v0.23.0
 Design:
 1) Information board: switch texture or use picture.
 2) Game scale: planets, orbits, and information board.
+3) Hint: appear after a certain period of time. Q: relative to player view
+4) Planet Placement: keep one in front of player? 
 
 Coding:
 1) Orbit: 
