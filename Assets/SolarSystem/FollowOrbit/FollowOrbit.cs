@@ -31,6 +31,7 @@ public class FollowOrbit : MonoBehaviour {
 	public void StopSound(){
 		selected.Stop();
 	}
+
 	// Use this for initialization
 	void StartFollow () {
 		startEarthOffset = earthOffset;
@@ -53,7 +54,7 @@ public class FollowOrbit : MonoBehaviour {
 		Debug.Log("OnCollisionEnter");
 		Debug.Log(this.gameObject + "entered" + collision.gameObject);
 		if (isCorrespondingCollision(collision)) {
-			StartFollowOrbit();//delete this to do follow on release
+			StartFollowOrbit(); //delete this to do follow on release
 			collided = true;
 		}
 	}

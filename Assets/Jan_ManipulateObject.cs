@@ -85,7 +85,11 @@ public class Jan_ManipulateObject : MonoBehaviour
             ObjectToPlace.transform.position = selectedPlanet.transform.position;
         }
 
-        string contentToPlace = "Setup content for " + name + " in script Jan_ManiipulateObject"; 
+        //temporary fix - to set up size for the textbox
+        string contentToPlace = "The largest planet in our solar system.\n\nA spacecraft can’t land on its surface since there is no solid surface at all!\n\nThe ammonia in the upper layer of its atmosphere swirls around in tremendous storms — the Great Red Spot.";
+        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length*2);
+      
+        contentToPlace = "Setup content for " + name + " in script Jan_ManiipulateObject"; 
         
         //add description content here
 
@@ -116,8 +120,6 @@ public class Jan_ManipulateObject : MonoBehaviour
                 contentToPlace = "Neptune is very cold and has very strong winds.\nNeptune is very similar to Uranus\nIt had a large dark spot that disappeared. Another dark spot appeared on another part of the planet. These dark spots are storms in Neptune’s atmosphere.";
                 break;
         }
-
-        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, contentToPlace.Length*2);
         contentText.text = string.Empty;
         contentText.text += contentToPlace;
         planetNameText.text = name;
