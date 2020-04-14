@@ -52,23 +52,28 @@ public class Jan_ManipulateObject : MonoBehaviour
         if (controller.TriggerValue < 0.2f)
         {
             trigger = true;
-            if (selectedPlanet != null)
+            performDeselectActions();
+        }
+
+    }
+
+    void performDeselectActions(){
+        if (selectedPlanet != null)
             {
                 selectedHolder.GetComponent<FollowOrbit>().StopSound();
                 collidedOnTriggerRelease = selectedHolder.GetComponent<FollowOrbit>().Collided();
                 Debug.Log(collidedOnTriggerRelease);
-                FollowOrbit fo = selectedHolder.GetComponent<FollowOrbit>();
-                selectedPlanet = null; 
                 if (collidedOnTriggerRelease) {
+                    FollowOrbit fo = selectedHolder.GetComponent<FollowOrbit>();
                     fo.StartFollowOrbit();
                 }
-            }
-            if (ObjectToPlace != null) {
+                selectedPlanet = null; 
+                selectedHolder = null;
+                
+                if (ObjectToPlace != null) {
                 ObjectToPlace.transform.position = new Vector3(-100, 0, 0);
+                }
             }
-        
-        }
-
     }
 
 
@@ -162,7 +167,22 @@ public class Jan_ManipulateObject : MonoBehaviour
             selectedHolder.transform.position = attachPoint.transform.position;
             //spin
             selectedPlanet.transform.Rotate(-Vector3.up * Time.deltaTime * 1 * ConfigManager.instance.orbitSpeedInDaysPerSecond);
+            DeselectIfOutHit();
         }
         UpdateTriggerInfo();
+    }
+
+    void DeselectIfOutHit(){
+        if (selectedPlanet) {
+            RaycastHit hit;
+                if (Physics.Raycast(controller.Position, transform.forward, out hit))
+                {
+                    if (!selectedHolder.Equals(hit.transform.gameObject))
+                    {
+                        performDeselectActions();
+                    }
+
+                }
+        }
     }
 }
