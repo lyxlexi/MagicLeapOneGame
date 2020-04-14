@@ -31,6 +31,16 @@ v0.23.0
 2) `Trigger` moves any planet not following orbit. Jupiter is used as an example. In `Main` scene, see `Control`>`ControllerInput` for controller input. `UpdateTriggerInfo()` function in `Jan_ManipulateObject` script controls what happens when trigger is pressed/released.
 3) Information board has two parts: UI and text content. UI is under PlanetUI gameobject; text is in `Jan_ManipulateObject`.
 
+### Update:
+4/13/2020
+1) Orbit: 
+1.1) attach the planet to the orbit when collide;
+1.2) created mesh collider from line renderer, the previous problem was the line didn't have end/start.
+2) Delete unnecessary objects & functions from the model so it runs faster.
+3) ControlInput check if the object is still selected (hit by raycast) in each update.
+4) Audio attached to planet triggered by player input
+
+
 ### TODO:
 Design:
 1) Information board: switch texture or use picture.
@@ -39,13 +49,10 @@ Design:
 4) Planet Placement: keep one in front of player? 
 
 Coding:
-1) Orbit: 
-    DONE attach the planet to the orbit when collide;
-    adjust starting position of the planet to the closest line segment;
-    mark corresponding orbit for each planet;
-    DONE adjust mesh for line renderer to collide with sphere collider - current not working, following orbit after colliding with anything
-DONE 2) Delete unnecessary objects & functions from the model so it runs faster.
-3) Make Holder & orbitCollider for each planet.
+1) Orbit: adjust starting position of the planet to the closest line segment;
+2) AFTER TESTING: Apply changes to each planet: 
+2.1) Make Holder & orbitCollider for each planet.
+2.2) Mark corresponding orbit for each planet;
 
 ## Device Instructions
 
