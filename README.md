@@ -47,6 +47,7 @@ Design:
 2) Game scale: planets, orbits, and information board.
 3) Hint: appear after a certain period of time. Q: relative to player view
 4) Planet Placement: keep one in front of player? 
+5) PlaceOnFloor/KeepInFront: what to put there
 
 Coding:
 1) Orbit: adjust starting position of the planet to the closest line segment;
