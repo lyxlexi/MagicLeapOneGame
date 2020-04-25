@@ -1,0 +1,290 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "08c86c76d2feff827f74d0cae56dc97cad4f9ff5",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3519124,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "d6d4e56a924e67fc0fcefc3b5adba84d04085de1",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 56183800,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "8e13e5f088be86754f625187e35c112c20ff9ec6",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/libil2cpp.so-5e8697b8b55b0b15",
+   "xfrm_size": 56184558
+  },
+  {
+   "compression": 8,
+   "hash": "eb463901d6f69c739181911a175309562ca388ce",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 286544,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "cdfbed6d8f7d9e5892f4119866e2e28546046161",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/AudioPluginMSASpatializer.so-b5c4cbe5442bfe79",
+   "xfrm_size": 287302
+  },
+  {
+   "compression": 8,
+   "hash": "96b8d200662a90ea28e6409a6f7b417021f9b274",
+   "pkgpath": "bin/LuminMediaPlayer.dll",
+   "size": 68608,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "7780c938de851b288547e030b08696e5f9b9883e",
+   "pkgpath": "bin/LuminUnity.dll",
+   "size": 327680,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "51f119b9d8bb1803df4f0e0ead2656f6fbba374b",
+   "pkgpath": "bin/MSA.Runtime.dll",
+   "size": 22528,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "a71acc50817a0929bccc93cbe7619d57d25d1b17",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 3077192,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "662e05249aecea3d2c2540f6bef4b175bc6648f5",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/UnityMagicLeap.so-b5c4cbe5442bfe79",
+   "xfrm_size": 3077950
+  },
+  {
+   "compression": 8,
+   "hash": "a86c27fcbaa2b90e59a995a472f69b8736524c2e",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "667a666c7e342480a9e83a46d0b2bb414e74615c",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/libml_camera_plugin.so-b5c4cbe5442bfe79",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "1d1daf0c329d1182bee0bcc2986e0368b2227511",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 72064,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "679e4753c0d07c29aa8852b8f55a429b41ba41de",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/libml_mediaplayer_plugin.so-b5c4cbe5442bfe79",
+   "xfrm_size": 72822
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "fa10859a933989c5961257c02d9f4fcf042044f1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3689324,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "8ecc7517089c05c171bc013026e728be8062b3e4",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 942768,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "778891100a8030ad6096db64784c6e5d67c28378",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 417,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "f548381b785f53cdd2aae706508877fc7389733a",
+   "pkgpath": "Data/boot.config",
+   "size": 247,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "d5e363cd8e706db0fcb1ab4d22b2450b8828bd8b",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 69976,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "7ef29fa91e0bb636d38e7cdb0ee59f79a0ef95df",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 100212,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "ce600fc99a494a8bbd561a48da36a85659bd5037",
+   "pkgpath": "Data/level0",
+   "size": 5428,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "4a7f383670f64febae341136532b82690a345945",
+   "pkgpath": "Data/resources.assets",
+   "size": 12336776,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "5d5a60b2e8cf1fd17784ff4913bb7ba974e2a58c",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 622624,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "72df8187e8b57e64fb93926431a0053987da4917",
+   "pkgpath": "Data/resources.resource",
+   "size": 5875136,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/resources.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "c749515bd75ba8c07d8540b1626e535b5841d76a",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 25784,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "77a9d0a1937d770e74dd10aa5e743d7443411f90",
+   "pkgpath": "bin/Player.elf",
+   "size": 49679296,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "456d172531caae86431adc5af44e6ecb4f90abe6",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/Player.elf-dc07b98a28cf334b",
+   "xfrm_size": 49680054
+  },
+  {
+   "compression": 8,
+   "hash": "5e179003a72321519417f467420e0066e49c95fb",
+   "pkgpath": "manifest.xml",
+   "size": 2017,
+   "src": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/Temp/StagingArea/manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "6e343a044d0f5f748980b9ac4ae5ba7e6b80b601",
+     "developer_id": "ff91f2e3-761b-4760-9839-4306e7f6dacd"
+    }
+   },
+   "xfrm_hash": "8b39912eb2d57da09dc67a877e0ab3ff551b7754",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/manifest.xml-dc07b98a28cf334b",
+   "xfrm_size": 2030
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "/Users/lexili/MagicLeap/mlsdk/v0.23.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "1d53ba582d80ac194d387ed0fc26456832019f10",
+   "xfrm_path": "/Users/lexili/Desktop/Unity/MagicLeapOneGame/.out/.cache/debug_lumin_clang-3.8_aarch64/com.test.test-22a181911fb61721/libc++_shared.so-a210d74e10a1b34f",
+   "xfrm_size": 977590
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "/Users/lexili/Desktop/Unity/oldcertificate/lexi.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}

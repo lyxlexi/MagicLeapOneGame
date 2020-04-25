@@ -41,7 +41,7 @@ Shader "Hidden/Post FX/Uber Shader"
         sampler2D _ChromaticAberration_Spectrum;
 
         // Depth of field
-        sampler2D_float _CameraDepthTexture;
+        UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);
         sampler2D _DepthOfFieldTex;
         float4 _DepthOfFieldTex_TexelSize;
         float2 _DepthOfFieldParams; // x: distance, y: f^2 / (N * (S1 - f) * film_width * 2)
