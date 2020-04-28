@@ -1235,7 +1235,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &125996314
 GameObject:
@@ -1429,7 +1429,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -2596,7 +2596,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -3126,7 +3126,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -3454,7 +3454,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -4215,7 +4215,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -4888,7 +4888,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!33 &570794266
 MeshFilter:
@@ -5492,7 +5492,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1001 &660798151
 PrefabInstance:
@@ -8041,7 +8041,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -8164,7 +8164,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1001 &885865937
 PrefabInstance:
@@ -8258,7 +8258,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -8811,7 +8811,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -9657,7 +9657,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1026916607
 GameObject:
@@ -9957,7 +9957,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -10628,7 +10628,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -10823,7 +10823,7 @@ MonoBehaviour:
   orbitToFollow: {fileID: 167098612}
   colliderToCollide: {fileID: 1969878637}
   selected: {fileID: 58833269}
-  orbitSpeed: 0
+  orbitSpeed: 1
   earthOffset: 27
 --- !u!54 &1213010172
 Rigidbody:
@@ -10839,7 +10839,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!135 &1213010173
 SphereCollider:
@@ -11793,7 +11793,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.0153
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -12417,7 +12417,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -12832,7 +12832,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -13541,7 +13541,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1619597997 stripped
 GameObject:
@@ -14830,7 +14830,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -15823,7 +15823,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
@@ -16587,7 +16587,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2037567277
 MonoBehaviour:
@@ -16725,7 +16725,7 @@ PrefabInstance:
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.15
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 120100347366310362, guid: 8cba24bbebda05343a38b8d0776fb6db,
         type: 3}
