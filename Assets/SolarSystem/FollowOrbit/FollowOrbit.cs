@@ -61,7 +61,7 @@ public class FollowOrbit : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collision){
 		if (colliderToCollide.Equals(collision.gameObject)) {
-			StartFollowOrbit(); //delete this to do follow on release
+			//StartFollowOrbit(); //delete this to do follow on release
 			collided = true;
 		}
 	}
@@ -76,6 +76,9 @@ public class FollowOrbit : MonoBehaviour {
 
 	void OnTriggerExit(Collider collision)
 	{
+		if (colliderToCollide.Equals(collision.gameObject)) {
+			collided = false;
+		}
 	}
 
 	private bool isCorrespondingCollision(Collision collision){
@@ -87,6 +90,7 @@ public class FollowOrbit : MonoBehaviour {
 	public void StartFollowOrbit(){
 		startedFollowingOrbit = true;
 		Debug.Log("StartFollowOrbit");
+		GetComponent<Rigidbody>().isKinematic = true;
 		orbitSpeed = 10;
 		StartFollow();
 	}

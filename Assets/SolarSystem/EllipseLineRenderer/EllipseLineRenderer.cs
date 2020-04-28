@@ -33,8 +33,6 @@ public class EllipseLineRenderer : MonoBehaviour {
 			Mesh mesh = new Mesh();
 			line.BakeMesh(mesh, false);
 			meshCollider.sharedMesh = mesh;
-			meshCollider.convex = true;
-			meshCollider.isTrigger = true;
 			Debug.Log("Mesh");
 		}
 	}
