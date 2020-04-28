@@ -58,7 +58,7 @@ public class Jan_ManipulateObject : MonoBehaviour
     }
 
     void performDeselectActions(){
-        if (selectedPlanet != null)
+        if (selectedPlanet != null || selectedHolder != null)
             {
                 selectedHolder.GetComponent<FollowOrbit>().StopSound();
                 collidedOnTriggerRelease = selectedHolder.GetComponent<FollowOrbit>().Collided();

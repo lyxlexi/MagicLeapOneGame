@@ -37,7 +37,7 @@ public class FollowOrbit : MonoBehaviour {
 		startEarthOffset = earthOffset;
 		lineRenderer = orbitToFollow.GetComponent<LineRenderer>();
 		numberOfpositions = lineRenderer.positionCount;
-		transform.localPosition = orbitToFollow.transform.TransformPoint(lineRenderer.GetPosition(numberOfpositions - earthOffset));
+		//transform.localPosition = orbitToFollow.transform.TransformPoint(lineRenderer.GetPosition(numberOfpositions - earthOffset));
 
 		// save obrbit local positions for reference, so we do not have to calculate global position on coroutine
 		localOrbitPositions = new Vector3[lineRenderer.positionCount];
@@ -59,11 +59,23 @@ public class FollowOrbit : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter(Collider collision){
+		if (colliderToCollide.Equals(collision.gameObject)) {
+			StartFollowOrbit(); //delete this to do follow on release
+			collided = true;
+		}
+	}
+
+
 	void OnCollisionExit(Collision collision) {
 		Debug.Log("OnCollisionExit " + collision.gameObject);
 		if (isCorrespondingCollision(collision)){
 			collided = false;
 		}	
+	}
+
+	void OnTriggerExit(Collider collision)
+	{
 	}
 
 	private bool isCorrespondingCollision(Collision collision){
@@ -75,7 +87,6 @@ public class FollowOrbit : MonoBehaviour {
 	public void StartFollowOrbit(){
 		startedFollowingOrbit = true;
 		Debug.Log("StartFollowOrbit");
-		GetComponent<Rigidbody>().isKinematic = true;
 		orbitSpeed = 10;
 		StartFollow();
 	}
