@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EmptyScene.unity
     guid: 102ec66d67b1d4913a8a47657c1e8982
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: e8ba99d3ea1d41b4fb8864460bd62b6d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage_Final.unity
     guid: 93b3324b48cf245978e0f514855bc470
   - enabled: 0
     path: Assets/Scenes/gamePrototype.unity
     guid: ea7c595c6b78b4e50bd634551eb49f14
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/test.unity
     guid: d07f1a67118be40548bbf278dffd91a7
   m_configObjects:
