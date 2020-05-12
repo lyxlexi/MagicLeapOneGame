@@ -1133,7 +1133,6 @@ GameObject:
   - component: {fileID: 120214422}
   - component: {fileID: 120214421}
   - component: {fileID: 120214420}
-  - component: {fileID: 120214425}
   m_Layer: 0
   m_Name: MarsHolder
   m_TagString: AstronomicalBody
@@ -1149,7 +1148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120214418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -69.92, y: 50, z: -46.84}
+  m_LocalPosition: {x: -69.92, y: 0, z: -46.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 173333630}
@@ -1177,7 +1176,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120214418}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfae2d264c358d54db6e309262d20b2f, type: 3}
   m_Name: 
@@ -1190,7 +1189,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120214418}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e543fda2f904cc04d8de926486d7bc93, type: 3}
   m_Name: 
@@ -1221,22 +1220,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120214418}
   m_Mesh: {fileID: 4300004, guid: 259f73d728706c5478c937a9101d293c, type: 3}
---- !u!54 &120214425
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120214418}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1 &125996314
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,7 +4777,6 @@ GameObject:
   - component: {fileID: 570794263}
   - component: {fileID: 570794262}
   - component: {fileID: 570794261}
-  - component: {fileID: 570794265}
   m_Layer: 0
   m_Name: SaturnHolder
   m_TagString: AstronomicalBody
@@ -4810,7 +4792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570794259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.6, y: 50, z: -22.3}
+  m_LocalPosition: {x: -62.5, y: 0, z: -22.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 892481613}
@@ -4851,7 +4833,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570794259}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e543fda2f904cc04d8de926486d7bc93, type: 3}
   m_Name: 
@@ -4874,22 +4856,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.2870274
   m_Center: {x: -0.18898845, y: 0, z: -0.00000037252903}
---- !u!54 &570794265
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570794259}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!33 &570794266
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5014,11 +4980,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4983235100952432, guid: 20a1e20fa159a844ab77ff4d5e235ca9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55
+      value: 77.5
       objectReference: {fileID: 0}
     - target: {fileID: 4983235100952432, guid: 20a1e20fa159a844ab77ff4d5e235ca9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4983235100952432, guid: 20a1e20fa159a844ab77ff4d5e235ca9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5064,7 +5030,7 @@ PrefabInstance:
     - target: {fileID: 114425550681239512, guid: 20a1e20fa159a844ab77ff4d5e235ca9,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114425550681239512, guid: 20a1e20fa159a844ab77ff4d5e235ca9,
         type: 3}
@@ -5095,6 +5061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.00000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 135235696561811386, guid: 20a1e20fa159a844ab77ff4d5e235ca9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 23010539878298612, guid: 20a1e20fa159a844ab77ff4d5e235ca9, type: 3}
@@ -5472,28 +5443,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &652364784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1919178363136288, guid: 715a347fde77c6245aaeb25d728d7bdf,
-    type: 3}
-  m_PrefabInstance: {fileID: 765844685}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &652364785
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652364784}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1001 &660798151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7057,11 +7006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4962387293443056, guid: 715a347fde77c6245aaeb25d728d7bdf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.5
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4962387293443056, guid: 715a347fde77c6245aaeb25d728d7bdf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4962387293443056, guid: 715a347fde77c6245aaeb25d728d7bdf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7112,7 +7061,7 @@ PrefabInstance:
     - target: {fileID: 114987362176598300, guid: 715a347fde77c6245aaeb25d728d7bdf,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114987362176598300, guid: 715a347fde77c6245aaeb25d728d7bdf,
         type: 3}
@@ -7138,6 +7087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.00000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 135287924573950812, guid: 715a347fde77c6245aaeb25d728d7bdf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 23000862361982718, guid: 715a347fde77c6245aaeb25d728d7bdf, type: 3}
@@ -7729,8 +7683,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858734829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 1}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 1.372, y: 0, z: 1.335}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_Children:
   - {fileID: 479068769}
   - {fileID: 884395349}
@@ -8116,7 +8070,6 @@ GameObject:
   - component: {fileID: 884395352}
   - component: {fileID: 884395351}
   - component: {fileID: 884395350}
-  - component: {fileID: 884395353}
   m_Layer: 0
   m_Name: EarthHolder
   m_TagString: AstronomicalBody
@@ -8132,7 +8085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884395348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.6, y: 50, z: 0}
+  m_LocalPosition: {x: 39.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1686557057}
@@ -8183,22 +8136,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3.9919317
   m_Center: {x: 0, y: 0, z: 0.030010939}
---- !u!54 &884395353
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884395348}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1001 &885865937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9670,28 +9607,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999311668}
   m_Mesh: {fileID: 4300000, guid: f0ca23537f2bb264583052a747cbf8d9, type: 3}
---- !u!1 &1026732802 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1519610596859666, guid: 10d65989ecf289147b02b256c114a91a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2088363503}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1026732803
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026732802}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1 &1026916607
 GameObject:
   m_ObjectHideFlags: 0
@@ -10233,7 +10148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4022406683555128, guid: 2d1f17ce4562f05469e62828be33db3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4022406683555128, guid: 2d1f17ce4562f05469e62828be33db3b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10241,7 +10156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4022406683555128, guid: 2d1f17ce4562f05469e62828be33db3b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.990003
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4022406683555128, guid: 2d1f17ce4562f05469e62828be33db3b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10261,7 +10176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4022406683555128, guid: 2d1f17ce4562f05469e62828be33db3b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4022406683555128, guid: 2d1f17ce4562f05469e62828be33db3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10818,7 +10733,6 @@ GameObject:
   - component: {fileID: 1213010173}
   - component: {fileID: 1213010171}
   - component: {fileID: 1213010174}
-  - component: {fileID: 1213010172}
   m_Layer: 0
   m_Name: JupiterHolder
   m_TagString: AstronomicalBody
@@ -10834,7 +10748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213010169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 50, z: 3.3}
+  m_LocalPosition: {x: 55, y: 0, z: 3.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 357157403}
@@ -10858,22 +10772,6 @@ MonoBehaviour:
   selected: {fileID: 58833269}
   orbitSpeed: 1
   earthOffset: 27
---- !u!54 &1213010172
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213010169}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!135 &1213010173
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13554,28 +13452,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1619545913 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1951210651182152, guid: 20a1e20fa159a844ab77ff4d5e235ca9,
-    type: 3}
-  m_PrefabInstance: {fileID: 611819429}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1619545914
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619545913}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1 &1619597997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1380596116241858, guid: 8cba24bbebda05343a38b8d0776fb6db,
@@ -16583,7 +16459,6 @@ GameObject:
   - component: {fileID: 2037567279}
   - component: {fileID: 2037567278}
   - component: {fileID: 2037567277}
-  - component: {fileID: 2037567276}
   m_Layer: 0
   m_Name: VenusHolder
   m_TagString: AstronomicalBody
@@ -16599,29 +16474,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037567274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 50, z: 3.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1112308926}
   m_Father: {fileID: 858734830}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2037567276
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037567274}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!114 &2037567277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16664,8 +16523,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3.867796
-  m_Center: {x: -0.0663352, y: 0, z: -0.00000029802322}
+  m_Radius: 0.66406655
+  m_Center: {x: -0.06633539, y: 0, z: 56.72103}
 --- !u!1001 &2049116512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16973,11 +16832,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4233128521469472, guid: 10d65989ecf289147b02b256c114a91a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.23
+      value: 27.5
       objectReference: {fileID: 0}
     - target: {fileID: 4233128521469472, guid: 10d65989ecf289147b02b256c114a91a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4233128521469472, guid: 10d65989ecf289147b02b256c114a91a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17023,7 +16882,7 @@ PrefabInstance:
     - target: {fileID: 114384211039171384, guid: 10d65989ecf289147b02b256c114a91a,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114384211039171384, guid: 10d65989ecf289147b02b256c114a91a,
         type: 3}
@@ -17059,6 +16918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.00000018626451
+      objectReference: {fileID: 0}
+    - target: {fileID: 135693352852366294, guid: 10d65989ecf289147b02b256c114a91a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 23501735840649896, guid: 10d65989ecf289147b02b256c114a91a, type: 3}

@@ -22,6 +22,12 @@ public class FollowOrbit : MonoBehaviour {
 
 	private int startEarthOffset;
 
+
+	void Awake()
+	{
+		StartFollowOrbit();
+
+	}
 	public void PlaySound(){
 		if (selected != null){
 			selected.Play();
@@ -71,7 +77,7 @@ public class FollowOrbit : MonoBehaviour {
 		Debug.Log("OnCollisionExit " + collision.gameObject);
 		if (isCorrespondingCollision(collision)){
 			collided = false;
-		}	
+		}
 	}
 
 	void OnTriggerExit(Collider collision)
